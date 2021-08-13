@@ -1,0 +1,4 @@
+Telethon
+python-decouple
+https://github.com/Morrolan/PastebinAPI/archive/master.zip
+requests

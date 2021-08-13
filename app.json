@@ -1,0 +1,46 @@
+{
+    "name": "PasteBin Bot",
+    "description": "PasteBin Telegram Bot made in python.",
+    "logo": "https://telegra.ph/file/edb413782213f971ac8d8.jpg",
+    "keywords": [
+        "Telegram",
+        "PasteBin",
+        "Python"
+    ],
+    "repository": "https://github.com/buddhhu/PasteBin-Bot",
+    "website": "t.me/BotsRealm",
+    "success_url": "t.me/BotsRealm",
+    "env": {
+        "API_ID": {
+            "description": "Your api id, from my.telegram.org",
+            "value": "6"
+        },
+        "API_HASH": {
+            "description": "Your api hash, from my.telegram.org",
+            "value": "eb06d4abfb49dc3eeb1aeb98ae0f581e"
+        },
+        "BOT_TOKEN": {
+            "description": "Your bot token, from @botfather",
+            "value": ""
+        },
+        "PASTEBIN_API_KEY": {
+            "description": "Your PasteBin api key, from https://pastebin.com/doc_api#1",
+            "value": ""
+        },
+        "PASTE_EXPIRY": {
+            "description": "Expire pastes after specific time, can be from [N, 10M, 1H, 1D, 1M]",
+            "value": "",
+            "required": false
+        },
+        "PRIVATE_PASTE": {
+            "description": "If NO, pastes will be public.",
+            "value": "",
+            "required": false
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "https://github.com/heroku/heroku-buildpack-python"
+        }
+    ]
+}
