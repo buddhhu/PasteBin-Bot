@@ -93,6 +93,8 @@ async def dustbin(event):
         paste_name = None
     msg = await replied_msg.reply("**Pasting on PasteBin...**")
     if replied_msg.document:
+        if replied_msg.file.size > 500*1024:
+            return await msg.edit("Maximum file size should be **500KB**")
         file = await replied_msg.download_media()
         try:
             with open(file, "r") as file_content:
