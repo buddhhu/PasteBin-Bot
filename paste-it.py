@@ -17,7 +17,7 @@ try:
         bot_token=ENV.BOT_TOKEN
     )
 except Exception as ex:
-    print(str(type(ex)) + ": " + str(ex))
+    print(f"{str(type(ex))}: {str(ex)}")
     exit()
 
 
